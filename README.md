@@ -17,3 +17,12 @@ Log Healthcare Professional interactions using natural language. Built with Fast
 
 ### Setup
 **Backend**
+cd backend
+pip install fastapi uvicorn langgraph langchain-groq supabase
+uvicorn main:app --reloadjavascript
+**Frontend**
+cd frontend
+npm install
+npm run devjavascript
+**Env vars**:
+Copy `.env.example` to `.env` and add your `SUPABASE_URL`, `SUPABASE_KEY`, `GROQ_API_KEY`
